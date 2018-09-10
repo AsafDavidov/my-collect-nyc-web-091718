@@ -1,8 +1,9 @@
 def my_collect(array)
   index = 0
-  new_fresh = []
+  new_arr = []
   while index < array.size
-    yield array[index]
+    new_arr.push(yield array[index])
+    
   end
 end
 
